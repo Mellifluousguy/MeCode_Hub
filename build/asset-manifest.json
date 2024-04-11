@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bd3ffa63.css",
+    "main.js": "/static/js/main.109499a3.js",
+    "static/media/WebDesigningDecor.png": "/static/media/WebDesigningDecor.5c7b7d2446e0517f1b1b.png",
+    "static/media/main.jpg": "/static/media/main.d5587167fd448b09888b.jpg",
+    "static/media/WebDesigning.jpg": "/static/media/WebDesigning.a4b3d12b0df2c26c805b.jpg",
+    "static/media/app_dev_06.jpg": "/static/media/app_dev_06.7636d252b45fd244696c.jpg",
+    "static/media/AppDevelopment.png": "/static/media/AppDevelopment.0445fdea3fe6b13a2188.png",
+    "static/media/MobileFeatures2.png": "/static/media/MobileFeatures2.666356e940727850cf52.png",
+    "static/media/WebFeature.jpg": "/static/media/WebFeature.8b056f43dc9e8de07eed.jpg",
+    "static/media/WebFeature2.png": "/static/media/WebFeature2.61d331c04b2372cece80.png",
+    "static/media/MobileFeatures3.png": "/static/media/MobileFeatures3.fa21f4babe8907f2c89c.png",
+    "static/media/WebFeature3.png": "/static/media/WebFeature3.e9eba8e5ca931434bfd9.png",
+    "static/media/MobileFeatures.png": "/static/media/MobileFeatures.d164b03667148caf00bb.png",
+    "index.html": "/index.html",
+    "main.bd3ffa63.css.map": "/static/css/main.bd3ffa63.css.map",
+    "main.109499a3.js.map": "/static/js/main.109499a3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd3ffa63.css",
+    "static/js/main.109499a3.js"
+  ]
+}
