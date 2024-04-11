@@ -1,0 +1,134 @@
+.ContainerAbout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+  background-color: #110654;
+  position: relative;
+}
+
+.ContainerAbout::before {
+  content: "";
+  width: 100%;
+  height: 65px;
+  position: absolute;
+  bottom: -0.3%;
+  left: 0;
+  background-size: auto;
+  background-repeat: repeat no-repeat;
+  background-position: 76vw bottom;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  127' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 93L50 87C100 82 200 70 300 47C400 25 500 -10 600 2C700 13 800 70 900 93C1000 116 1100 104 1150 99L1200 93V127H1150C1100 127 1000 127 900 127C800 127 700 127 600 127C500 127 400 127 300 127C200 127 100 127 50 127H0V93Z' fill='%23ffffff'/></svg>");
+}
+
+@media(max-width:850px) {
+  .ContainerAbout::before {    
+    height: 32.5px
+  }  
+}
+
+.ContainerAbout h1 {
+  color: white;
+}
+
+.ContainerAbout p {
+  color: #A894D1;
+  max-width: 35%;
+  text-align: center;
+  font-weight: 600;
+}
+
+.ContainerAbout button {
+  margin: 1% 0;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #110654;
+  border: none;
+  margin: 20px 0;
+}
+
+.AboutUsPage {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  padding: 45px;
+}
+
+.AboutUsPage p {
+  width: 60%;
+  font-weight: 500;
+  color: #5f045d;
+}
+
+.ReviewContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Reviews {
+  margin: 2%;
+  width: 70%;
+  text-align: center;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.review {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  /* box-shadow: rgba(9, 30, 66, 0.25) 0px 0px 5px; */
+}
+
+.review:hover{
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 0px 10px;
+  
+}
+
+.review img {
+  border-radius: 50%;
+  width: 40%;
+  position: absolute;
+  bottom: -50%;
+  outline: 5px solid rgb(255, 255, 255);
+  left: 50%;
+  transform: translate(-50%, -10%);
+}
+
+.review section {
+  height: 18vh;
+  position: relative;
+  background: rgb(187, 71, 255);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+.review article {
+  margin-top: 20px;
+  padding: 50px 20px 30px 20px;
+  /* font-weight: 500; */
+}
+
+.review .rate {
+  margin: 10px 0;
+}
+@media (max-width: 968px) {
+  .ContainerAbout p{
+    max-width: 80%;
+    font-size: small;
+  }
+  .AboutUsPage p{
+    font-size: small;
+    width: 100%;
+  }
+  .Reviews{
+    grid-template-columns: auto;
+  }
+}

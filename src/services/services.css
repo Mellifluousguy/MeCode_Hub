@@ -1,0 +1,110 @@
+.ServicesFront {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #0F1e6f;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+}
+
+.ServicesFront::before {
+    content: "";
+    width: 100%;
+    height: 65px;
+    position: absolute;
+    bottom: -0.3%;
+    left: 0;
+    background-size: auto;
+    background-repeat: repeat no-repeat;
+    background-position: 76vw bottom;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 98L50 92C100 86 200 74 300 50C400 26 500 -10 600 2C700 14 800 74 900 98C1000 122 1100 110 1150 104L1200 98V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V98Z' fill='%23f4f4f4'/></svg>");
+}
+
+.ServicesFront p {
+    width: 30%;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.ServicesFront h1 {
+    color: #a866c2;
+}
+
+.ServicesPage .cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-self: center;
+    width: 80%;
+    gap: 25px;
+}
+
+.cards img {
+    width: 40%;
+}
+
+.cards .FeaturesCard {
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    padding: 75px 20px;
+
+}
+
+.cards .FeaturesCard:hover {
+    box-shadow: lightgray 0 0 10px;
+}
+
+.FeatureCard {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #ececec94;
+    flex-direction: column;
+}
+
+.FeatureCard h1 {
+    text-align: center;
+}
+
+.ServiceSecond .ServicesCard {
+    display: grid;
+    width: 80%;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+}
+
+.ServiceSecond {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 75px 0;
+    background: #ececec94;
+}
+
+.ServicesCard img {
+    width: 50%;
+}
+
+.ServicesCards {
+    padding: 75px 40px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+@media (max-width:960px) {
+    .ServicesFront p {
+        font-size: small;
+        width: 80%;
+    }
+
+    .ServicesPage .cards,
+    .ServiceSecond .ServicesCard {
+        grid-template-columns: auto;
+        font-size: small;
+    }
+}

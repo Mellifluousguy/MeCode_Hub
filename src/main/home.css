@@ -1,0 +1,337 @@
+.container {
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background: url(../images/main.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.main-container h2 {
+    color: #3bc1e6;
+    font-size: xx-large;
+}
+
+.main-container h2 span {
+    color: #A866c6;
+}
+
+.main-container {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.description {
+    margin-top: 2%;
+    color: white;
+    width: 38%;
+}
+
+.description p strong {
+    color: #9f6ec9;
+}
+
+.webDesigning,
+.WebDev,
+.AppDevelopment {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% auto;
+    /* height: 90vh; */
+    position: relative;
+    padding: 5% 0;
+    background: #e1a2e9;
+}
+
+.webDesigning .Decor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.25;
+}
+
+.content {
+    padding: 5% 17%;
+    position: relative;
+    overflow: hidden;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content h1 {
+    color: #110654;
+    margin: 5% 0;
+    text-align: center;
+}
+
+.content::after {
+    content: '';
+    position: absolute;
+    width: 43%;
+    height: 60%;
+    right: 8%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-radius: 2%;
+    background: #9279cc;
+    z-index: -1;
+
+}
+
+.loop:hover .content::after {
+    animation: 5s rotate alternate infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) rotate(135deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+}
+
+.content strong {
+    color: #3b005a;
+}
+
+.image img {
+    width: 80%;
+    padding: 10%;
+}
+
+.image:hover img {
+    transform: scale(1.4);
+}
+
+.image {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.users {
+    height: 45vh;
+    position: relative;
+    background: #1150a0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.users::after {
+    content: "";
+    width: 100%;
+    height: 5vh;
+    position: absolute;
+    bottom: -0.1%;
+    left: 0;
+    background-size: auto;
+    background-repeat: repeat no-repeat;
+    background-position: 65vw bottom;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 0C22.4434 -1 28.9842 2 55 24C94.1849 54 121.997 57 158.5 58C198.5 60 200 44 240 52C280 59 320 89 360 89C400 89 440 59 480 54C520 49 560 69 600 84C640 99 680 109 720 114C760 119 800 119 840 104C880 89 920 59 960 62C1000 64 1040 99 1080 94C1120 89 1127.5 59 1147.5 37C1171.48 11 1185.65 0 1200 0V134H1180C1160 134 1120 134 1080 134C1040 134 1000 134 960 134C920 134 880 134 840 134C800 134 760 134 720 134C680 134 640 134 600 134C560 134 520 134 480 134C440 134 400 134 360 134C320 134 280 134 240 134C200 134 160 134 120 134C80 134 40 134 20 134H0V0.0103865Z' fill='%23ffffff'/></svg>");
+}
+
+.counter h2 {
+    -webkit-text-stroke: 1px white;
+    letter-spacing: 1px;
+    font-size: xx-large;
+    font-weight: 1000;
+    color: transparent;
+}
+
+.counter h1 {
+    color: #b0a4e3;
+}
+
+.users:hover .counter {
+    transform: scale(1.2);
+}
+
+.WebDev {
+    background: transparent;
+}
+
+.features {
+    /* height: 100vh; */
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: #A866c6;
+    color: #000;
+}
+
+.cards {
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 90%;
+    margin: 5% 0;
+}
+
+.card {
+    padding: 5% 5%;
+    /* gap: 10px; */
+    background: #f1c8dda2;
+    margin: 2%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card h3 {
+    margin: 5% 0;
+    color: #110654;
+}
+
+.card img {
+    width: 45%;
+
+    /* height: 50%; */
+}
+
+.cards .card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 5px white;
+}
+
+.AppDevelopment {
+    background: #9e6ec993;
+}
+
+
+/* Footer */
+.footer .MainPage {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background: #360058;
+    color: white;
+    padding: 2% 0;
+}
+
+.FooterContent ul {
+    list-style-type: none;
+    /* margin-left: 3%; */
+    font-size: smaller;
+
+}
+
+.FooterContent ul li {
+    margin: 5% 0;
+}
+
+.FooterContent ul li a {
+    font-size: small;
+
+}
+
+.FooterContent h3,
+.FooterContent h4 {
+    font-weight: 500;
+    margin: 5% 0;
+    text-align: start;
+    width: 55%;
+}
+
+.FooterContent h1 a {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.FooterContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .MainPage .Logo {
+    align-items: center;
+    justify-content: center;
+}
+
+.FooterContent p {
+    color: #b0a4e3;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 5%;
+    width: 60%;
+}
+
+.FooterContent nav {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.FooterContent nav a {
+    font-size: large;
+}
+
+footer {
+    padding: 1% 0;
+    text-align: center;
+    background: #110654;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .footer .MainPage {
+        grid-template-columns: auto;
+        padding-left: 40px;
+    }
+
+    .webDesigning,
+    .WebDev,
+    .AppDevelopment {
+        grid-template-columns: auto;
+        font-size: small;
+    }
+
+    .content::after {
+        display: none;
+    }
+
+    .description {
+        font-size: small;
+        width: 80%;
+    }
+
+    .container {
+        background-position: center;
+    }
+
+    .users .counter h2 {
+        -webkit-text-stroke: none;
+        font-size: medium;
+        font-weight: 400;
+        color: white;
+    }
+    .cards{
+        grid-template-columns: auto;
+    }
+}

@@ -1,0 +1,213 @@
+.Contact {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #f4f4f4;
+}
+
+.mainContact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #5d038d;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+}
+
+.mainContact::before {
+    content: "";
+    width: 100%;
+    height: 65px;
+    position: absolute;
+    bottom: -0.3%;
+    left: 0;
+    background-size: auto;
+    background-repeat: repeat no-repeat;
+    background-position: 76vw bottom;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 98L50 92C100 86 200 74 300 50C400 26 500 -10 600 2C700 14 800 74 900 98C1000 122 1100 110 1150 104L1200 98V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V98Z' fill='%23f4f4f4'/></svg>");
+}
+
+.mainContact p {
+    width: 30%;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.mainContact h1 {
+    color: #2dc8e6;
+}
+
+.ContactForm {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    flex-direction: column;
+    padding: 75px 0 45px 0;
+    margin: 25px 0;
+    box-shadow: 0 0 5px lightgray;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    backdrop-filter: blur(15px);
+    margin: 75px 0;
+}
+
+.ContactForm:hover {
+    box-shadow: 0 0 15px lightgray;
+}
+
+.ContactForm form {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    width: 80%;
+    padding: 25px;
+}
+
+.ContactForm form textarea {
+    resize: none;
+}
+
+.ContactForm form input,
+.ContactForm form textarea {
+    background: transparent;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+    border: 1px solid lightgray;
+    color: #4b006d;
+}
+
+.ContactForm h2,
+.ContactForm form label {
+    color: #121654;
+}
+
+.ContactForm span {
+    color: #870861;
+    font-weight: 500;
+}
+
+.ContactForm form label {
+    font-weight: 600;
+}
+
+.ContactForm form button {
+    padding: 10px 0;
+    border-radius: 25px;
+    border: none;
+    background: #360058;
+    color: lightgray;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.QueriesContainer {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    margin-bottom: 45px;
+}
+.QueriesContainer h1{
+    margin: 20px 0;
+    color: #110654;
+}
+
+.query {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.query:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.query-header {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f4f4f4;
+    display: block;
+    font-weight: 600;
+    color: #360058;
+}
+
+.Answer {
+    padding: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out, visibility .5s ease-in-out, opacity .5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+}
+
+.query-toggle:checked+.query-header+.Answer {
+    max-height: 150px;
+    /* Adjust as needed */
+    visibility: visible;
+    opacity: 1;
+}
+
+.query-toggle {
+    display: none;
+}
+
+.query .query-header {
+    position: relative;
+}
+
+.query label span {
+    position: absolute;
+    right: 3%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    padding: 0px 10px;
+    font-size: 20px;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+}
+
+.query-toggle:checked~label span {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+@media (max-width: 968px) {
+    .mainContact p{
+        font-size: small;
+        width: 80%;
+    }
+    .ContactForm form{
+        font-size: small;
+        width: 90%;
+    }
+    .ContactForm{
+        width: 95%;
+    }
+    .ContactForm span{
+        font-size: small;
+        width: 80%;
+    }
+    .QueriesContainer h1{
+        font-size: large;
+    }
+    .QueriesContainer .query{
+        width: 80%;
+        font-size: small;
+    }
+    .query label{
+        width: 80%;
+    }
+    .query label span{
+        right: -25%;
+    }
+}
